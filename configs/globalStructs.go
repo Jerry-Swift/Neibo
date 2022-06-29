@@ -4,6 +4,7 @@ type GlobalInfo struct {
 	IP             string
 	Port           string
 	Mode           string
+	Pocs           string
 	OutPath        string
 	Timeout        int
 	Threads        int

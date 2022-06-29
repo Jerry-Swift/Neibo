@@ -1,2 +1,2 @@
-https://www.baidu.com
-https://www.qq.com
+https://httpbin.org/get
+https://httpbin.org/post

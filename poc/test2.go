@@ -10,9 +10,19 @@ import (
 type Test2 struct{}
 
 func (test2 Test2) SendPoc(target string, urlInfo configs.UrlInfo) {
-	logrus.Info("[+] Start Test")
+	logrus.Info("[+] Start Test2")
 	urlInfo.Url = target
-	urlInfo.Method = "Get"
+	urlInfo.Method = "Post"
+	urlInfo.Body["Bo"] = "Test Body"
 	resp := common.Req(urlInfo)
 	fmt.Println("resp:", resp)
 }
+
+//
+//func (test2 Test2) CheckExp(target string, output string) {
+//
+//}
+//
+//func (test2 Test2) SaveResult(resp *req.Response, target string, info map[string]interface{}) bool {
+//	return true
+//}
