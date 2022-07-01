@@ -13,7 +13,6 @@ func (test2 Test2) SendPoc(target string, urlInfo configs.UrlInfo) {
 	logrus.Info("[+] Start Test2")
 	urlInfo.Url = target
 	urlInfo.Method = "Post"
-	urlInfo.Body["Bo"] = "Test Body"
 	resp := common.Req(urlInfo)
 	fmt.Println("resp:", resp)
 }

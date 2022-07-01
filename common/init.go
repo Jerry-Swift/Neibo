@@ -9,9 +9,6 @@ func UrlInit() configs.UrlInfo { // Url配置初始化
 		Headers: make(map[string]string),
 		Method:  "",
 		Retry:   3,
-		Body:    make(map[string]string),
-		Proxy:   "",
-		Timeout: 5,
 	}
 	return urlInfo
 }
